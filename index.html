@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="image/images/moon.png" id="icon" onclick="toggleDarkMode()">
+    
+    <!-- JavaScript for toggling dark mode -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "image/images/sun.png"; 
+            } else {
+                icon.src = "image/images/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>

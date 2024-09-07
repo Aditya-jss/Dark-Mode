@@ -1,0 +1,24 @@
+:root {
+    --primary-color: black; 
+    --secondary-color: #edf2fc; 
+}
+
+.dark-theme {
+    --primary-color: white; /* Dark mode primary color */
+    --secondary-color: #1a1a1a; /* Dark mode background color */
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;               
+    background-color: var(--secondary-color); /* Apply background color */
+}
+
+#icon {
+    width: 100px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 5px var(--primary-color)); /* Add shadow effect using primary color */
+}
